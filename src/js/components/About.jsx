@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import LangContext from '../LangContext';
+import profilePic from '../../images/profilepic.png'
 
 function About() {
     const { about } = useContext(LangContext).currentLangData;
@@ -11,7 +12,7 @@ function About() {
         <section id="about">
             <div className="row">
                 <div className="three columns">
-                    <img className="profile-pic" src="images/profilepic.png" alt="" />
+                    <img className="profile-pic" src={profilePic} alt="" />
                 </div>
                 <div className="nine columns main-col">
                     <h2>{about.title}</h2>

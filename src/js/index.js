@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import '../css/index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import $ from 'jquery';
+window.jQuery = $; // Shimming
+window.$ = $; // Shimming
+
+import fittext from '../../node_modules/fittext/dist/jquery.fittext';
+import flexslider from '../../node_modules/flexslider/jquery.flexslider';
 
 ReactDOM.render(
   <React.StrictMode>
