@@ -29,6 +29,7 @@ function App() {
       <div className="App">
         <Header></Header>
         <About></About>
+        <Portfolio></Portfolio>
         <Footer></Footer>
       </div>
     </LangProvider>

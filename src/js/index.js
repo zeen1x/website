@@ -7,8 +7,6 @@ import $ from 'jquery';
 window.jQuery = $; // Shimming
 window.$ = $; // Shimming
 
-import fittext from '../../node_modules/fittext/dist/jquery.fittext';
-import flexslider from '../../node_modules/flexslider/jquery.flexslider';
 
 ReactDOM.render(
   <React.StrictMode>

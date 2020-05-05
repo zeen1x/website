@@ -1,5 +1,5 @@
 import waypoint from '../../node_modules/jquery-waypoints/waypoints';
-import magnificPopup from 'magnific-popup';
+import flexslider from '../../node_modules/flexslider/jquery.flexslider';
 
 /*-----------------------------------------------------------------------------------
 /*
@@ -8,25 +8,14 @@ import magnificPopup from 'magnific-popup';
 -----------------------------------------------------------------------------------*/
 
 function InitJs() {
-   //fitTextSettings();
    SmoothScrolling();
-   //highlightNavbarSection();
+   HighlightNavbarSection();
    SetupBackgroundImageHeight();
-   //fadeInOutOnScroll();
+   FadeInOutOnScroll();
    Flexslider();
 }
 
 export default InitJs;
-
-/*----------------------------------------------------*/
-/* FitText Settings
------------------------------------------------------- */
-
-function FitTextSettings() {
-   setTimeout(function () {
-      $('h1.responsive-headline').fitText(1, { minFontSize: '40px', maxFontSize: '90px' });
-   }, 100);
-}
 
 /*----------------------------------------------------*/
 /* Smooth Scrolling
@@ -113,27 +102,6 @@ function FadeInOutOnScroll() {
       }
 
 	});
-}
-
-/*----------------------------------------------------*/
-/*	Modal Popup
-------------------------------------------------------*/
-
-function ModalPopup() {
-    $('.item-wrap a').magnificPopup({
-
-       type:'inline',
-       fixedContentPos: false,
-       removalDelay: 200,
-       showCloseBtn: false,
-       mainClass: 'mfp-fade'
-
-    });
-
-    $(document).on('click', '.popup-modal-dismiss', function (e) {
-    		e.preventDefault();
-    		$.magnificPopup.close();
-    });
 }
 
 /*----------------------------------------------------*/

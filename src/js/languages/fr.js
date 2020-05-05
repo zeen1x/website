@@ -9,7 +9,7 @@ const fr = {
         title: 'Francis Desbiens',
         showNavigation: 'Afficher la navigation',
         hideNavigation: 'Cacher la navigation',
-        titleDescription1: 'Développeur Junior web fullstack.',
+        titleDescription1: 'Développeur Web Junior.',
         titleDescription2: 'Pour en apprendre plus sur moi, ',
         titleDescriptionLink: 'continuez',
         titleDescription3: 'votre visite.'
